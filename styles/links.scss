@@ -1,0 +1,122 @@
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.link{
+	color: #000000;
+	font-size: 16px;
+	font-weight: 700;
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*
+* These styles creates the underlining of link
+*/
+
+.link{
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+}
+
+.link::before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top, #ff9a02 15%, rgba(0, 0, 0, 0) 40%);
+	
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	z-index: -1;
+	
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
+}
+
+.link:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.link::before{
+	transition: width .1s ease-out;
+}
+
+.link:hover::before{
+	transition-duration: .15s;
+}
+
+
+
+
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.linkx{
+	color: #000000;
+	font-size: 16px;
+	font-weight: 700;
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*
+* These styles creates the underlining of link
+*/
+
+.linkx{
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+}
+
+.linkx::before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top, #02d9ff 15%, rgba(0, 0, 0, 0) 40%);
+	
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	z-index: -1;
+	
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
+}
+
+.linkx:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.linkx::before{
+	transition: width .1s ease-out;
+}
+
+.linkx:hover::before{
+	transition-duration: .15s;
+}

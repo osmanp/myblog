@@ -1,0 +1,24 @@
+{
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es6": true,
+      "node": true
+    },
+    "plugins": ["import"],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-eval": "error",
+      "import/first": "error",
+      "react/react-in-jsx-scope": "off"
+    },
+    "globals": {
+      "React": "writable"
+    }
+  }
+  

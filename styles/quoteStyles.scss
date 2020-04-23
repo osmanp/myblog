@@ -1,0 +1,216 @@
+
+$bg: #fff;
+.quote {
+    display:inline-block;
+    margin:1em;
+    overflow:hidden;
+    blockquote {
+      background-color:$bg;
+      border: solid 2px #757575;
+      display: inline-block;
+      margin: 0;
+      padding: 1em;
+      position: relative;
+      &:before {
+        background-color: $bg;
+        bottom: -10%;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -10%;
+        transform: rotate(-15deg) skew(5deg);
+      }
+      cite {
+        display: block;
+        font-style: italic;
+        text-align: right;
+        &:before {
+          content: "- ";
+        }
+      }
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  
+  .animatedBorderQuote {
+    display:inline-block;
+    margin:1em;
+    max-width:20em;
+    overflow:hidden;
+    blockquote {
+      background-color:$bg;
+      border: solid 2px #757575;
+      display: inline-block;
+      margin: 0;
+      padding: 1em;
+      position: relative;
+      &:before {
+        animation:clockwise 30s infinite linear;
+        background-color: $bg;
+        bottom:10%;
+        content: "";
+        left: 0;
+        opacity:.5;
+        position: absolute;
+        right: 0;
+        top:10%;
+      }
+      &:after {
+        animation:counter 30s infinite linear;
+        background-color: $bg;
+        bottom:10%;
+        content: "";
+        left: 0;
+        opacity:.5;
+        position: absolute;
+        right: 0;
+        top:10%;
+      }
+      cite {
+        display: block;
+        font-style: italic;
+        text-align: right;
+        &:before {
+          content: "- ";
+        }
+      }
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  
+  @keyframes clockwise {
+    0% {
+      transform:rotate(0);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
+  }
+  
+  @keyframes counter {
+    0% {
+      transform:rotate(0);
+    }
+    100% {
+      transform:rotate(-360deg);
+    }
+  }
+  
+  .animatedShadowQuote {
+    display:inline-block;
+    margin:1em;
+    max-width:200em;
+    position:relative;
+    blockquote {
+      animation:shadows 3s linear infinite alternate;
+      display:inline-block;
+      margin:0;
+      padding:1em;
+      cite {
+        display: block;
+        font-style: italic;
+        text-align: right;
+        &:before {
+          content: "- ";
+        }
+      }
+    }
+  }
+  
+  @keyframes shadows {
+    0% {
+      box-shadow:0 2px 4px -2px rgba(0,0,0,.25);
+      transform:scale(.95);
+    }
+    100% {
+      box-shadow:0 0 4px 2px rgba(0,0,0,.25);
+      transform:scale(1);
+    }
+  }
+  
+  .squareBracketsQuote {
+    display:inline-block;
+    font-family:sans-serif;
+    margin:1em;
+    max-width:20em;
+    blockquote {
+      border:solid 1em #ccc;
+      display:inline-block;
+      margin:0;
+      padding:1em;
+      position:relative;
+      &:before {
+        background-color: $bg;
+        bottom: -1em;
+        content: "";
+        left: 2em;
+        position: absolute;
+        right: 2em;
+        top: -1em;
+      }
+      cite {
+        color:#757575;
+        display: block;
+        font-size:small;
+        font-style: normal;
+        text-align: right;
+        text-transform:uppercase;
+      }
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  
+  .giantQuotesQuote {
+    display:inline-block;
+    font-family:sans-serif;
+    margin:1em;
+    max-width:20em;
+    blockquote {
+      display:inline-block;
+      margin:0;
+      padding:1em;
+      position:relative;
+      &:before {
+        color:#f90;
+        content:"\201C";
+        font-size:4em;
+        left:0;
+        line-height:.75em;
+        position:absolute;
+        top:0;
+        transform:scale(2, 8);
+        transform-origin:top;
+      }
+      &:after {
+        color:#f90;
+        content:"\201D";
+        font-size:4em;
+        line-height:.75em;
+        position:absolute;
+        right:0;
+        top:0;
+        transform:scale(2, 8);
+        transform-origin:top;
+      }
+      > * {
+        padding:0 2em;
+      }
+      cite {
+        color:#c60;
+        display: block;
+        font-style: normal;
+        text-align: right;
+        text-transform:uppercase;
+      }
+    }
+  }
