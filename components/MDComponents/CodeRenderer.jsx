@@ -1,13 +1,15 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula, github,agate } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { qtcreator_dark } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
 import _ from "lodash";
 
 var styleConverter = _.cond([
   [_.matches("js"), _.constant(dracula)],
   [_.matches("javascript"), _.constant(dracula)],
   [_.matches("typescript"), _.constant(agate)],
-  [_.matches("terminal"), _.constant(github)]
+  [_.matches("terminal"), _.constant(github)],
+  [_.matches("c++"), _.constant(qtcreator_dark)]
 ]);
 
 const CodeRenderer = ({ language, showLineNumbers, value }) => {
