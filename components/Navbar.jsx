@@ -81,7 +81,7 @@ const Navbar = ( props ) => {
                   <Grid item xs={2}>
                     <Avatar
                       alt="Osman P"
-                      src="/photos/blogChip.jpg"
+                      src="/photos/blogAvatar.jpg"
                       className={classes.avatarLarge}
                       onClick={handleAvatarClick}
                     ></Avatar>
