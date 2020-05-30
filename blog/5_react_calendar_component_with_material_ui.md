@@ -3,6 +3,7 @@ id: '5'
 date: '2020-04-23T04:13:56+00:00'
 title: 'React calendar component with material-ui'
 template: post
+popularity: '8'
 thumbnail: '../thumbnails/react.png'
 slug: react-calendar-component
 readtime: '10 min'

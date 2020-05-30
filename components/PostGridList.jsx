@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PostGridList = ({ title, postList, size }) => {
+const PostGridList = ({ title, postList, size }) => {    
   const router = useRouter();
   const classes = useStyles();
   const handleItemClick = (post) => {

@@ -93,20 +93,19 @@ const Index = (props) => {
                   <CategoryView posts={BlogPost}></CategoryView>
                 </Grid>
               </Grid> */}
-
               <Grid item >
                 <PostGridList
-                  postList={PostList.sort((x,y) => moment(x.attributes.date).isAfter(y.attributes.date)).slice(0,10)}
+                 postList={PostList.sort((x,y) => x.attributes.popularity < y.attributes.popularity ? 1 : -1).slice(0,5)}                  
                   title={"Popular articles"}
                 ></PostGridList>
               </Grid>
               <Grid item >
                 <PostGridList
-                    postList={PostList.sort((x,y) => moment(x.attributes.date).isBefore(y.attributes.date)).slice(0,10)}
-                  title={"Featured articles"}
+                  postList={PostList.sort((x,y) => moment(x.attributes.date).isAfter(y.attributes.date) ? -1 : 1).slice(0,5)} 
+                  title={"Newest articles"}
                 ></PostGridList>
               </Grid>
-              <Grid item >
+              {/* <Grid item >
               <Typography
         component="h4"
         variant="h4"
@@ -116,8 +115,8 @@ const Index = (props) => {
       >
         {"Useful Links"}
       </Typography>
-              </Grid>
-            </Grid>
+              </Grid> */}
+            </Grid> 
           </Container>
         </div>
       </Layout>

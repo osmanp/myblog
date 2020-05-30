@@ -3,6 +3,7 @@ id: '4'
 date: '2020-04-16T04:13:56+00:00'
 title: 'Advanced recipes with Knex.js'
 template: post
+popularity: '8'
 thumbnail: '../thumbnails/typescript.png'
 slug: advanced-knexjs
 readtime: '10 min'

@@ -5,6 +5,7 @@ title: 'Visibility analysis Part II: Viewshed'
 template: post
 thumbnail: '../thumbnails/qt.png'
 slug: gis-algorithms-viewshed
+popularity: '7'
 readtime: '10 min'
 categories:  
   - GIS

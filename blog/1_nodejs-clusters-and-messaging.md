@@ -3,6 +3,7 @@ id: '1'
 date: '2020-04-16T04:13:56+00:00'
 title: 'NodeJS clusters and utilizing workers with inter-process messaging'
 template: post
+popularity: '7'
 thumbnail: '../thumbnails/node.png'
 slug: nodejs-clusters-and-messaging
 readtime: '4 min'

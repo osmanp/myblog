@@ -3,6 +3,7 @@ id: '5'
 date: '2020-04-29T04:13:56+00:00'
 title: 'Visibility analysis Part I: Line-of-sight'
 template: post
+popularity: '2'
 thumbnail: '../thumbnails/qt.png'
 slug: gis-algorithms-los
 readtime: '10 min'

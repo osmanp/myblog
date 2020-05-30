@@ -4,6 +4,7 @@ date: '2020-04-17T12:13:56+00:00'
 title: 'Introduction to Knex.js Part I'
 template: post
 thumbnail: '../thumbnails/typescript.png'
+popularity: '3'
 slug: introduction-to-knexjs-postgresql-part-I
 readtime: '12 min'
 categories:  

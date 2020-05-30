@@ -3,6 +3,7 @@ id: '3'
 date: '2020-04-16T04:13:56+00:00'
 title: 'Introduction to Knex.js Part II'
 template: post
+popularity: '3'
 thumbnail: '../thumbnails/typescript.png'
 slug: introduction-to-knexjs-part-II
 readtime: '10 min'
