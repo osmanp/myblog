@@ -120,3 +120,63 @@
 .linkx:hover::before{
 	transition-duration: .15s;
 }
+
+
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.linky{
+	color: #000000;
+	font-size: 16px;
+	font-weight: 700;
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*
+* These styles creates the underlining of link
+*/
+
+.linky{
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+}
+
+.linky::before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top, #19857b 15%, rgba(0, 0, 0, 0) 40%);
+	
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	z-index: -1;
+	
+	will-change: width;
+	
+}
+
+.linky:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.linky::before{
+	transition: width .1s ease-out;
+}
+
+.linky:hover::before{
+	transition-duration: .15s;
+}
